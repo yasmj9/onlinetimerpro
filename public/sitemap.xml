@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://onlinetimerpro.com/</loc>
+    <lastmod>2025-06-01</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <!-- Add more pages -->
+  <url>
+    <loc>https://onlinetimerpro.com/pages/about</loc>
+    <lastmod>2025-06-01</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://onlinetimerpro.com/pages/contact</loc>
+    <lastmod>2025-06-01</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://onlinetimerpro.com/pages/privacy</loc>
+    <lastmod>2025-06-01</lastmod>
+    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://onlinetimerpro.com/pages/terms</loc>
+    <lastmod>2025-06-01</lastmod>
+    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+</urlset>

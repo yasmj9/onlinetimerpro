@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /pages/about
+Allow: /pages/privacy
+Allow: /pages/terms
+Allow: /pages/contact
+Sitemap: https://onlinetimerpro.com/sitemap.xml

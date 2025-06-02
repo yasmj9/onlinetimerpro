@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useRouter } from '../hooks/useRouter';
+import { useNavigate } from 'react-router';
 
 interface PageHeaderProps {
   title: string;
@@ -17,7 +17,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
   className = '',
   children
 }) => {
-  const { goBack } = useRouter();
+  let navigate = useNavigate();
 
   return (
     <motion.header
@@ -30,7 +30,7 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
       <div className="flex items-center gap-4">
         {showBackButton && (
           <motion.button
-            onClick={goBack}
+            onClick={()=>navigate(-1)}
             className="flex items-center gap-2 p-2 hover:bg-white/10 dark:hover:bg-black/20 rounded-lg transition-colors cursor-pointer group"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -148,7 +148,8 @@ export const EnhancedPageHeader: React.FC<EnhancedPageHeaderProps> = ({
   actions,
   children
 }) => {
-  const { goBack } = useRouter();
+
+    let navigate = useNavigate();
 
   return (
     <motion.header
@@ -174,7 +175,7 @@ export const EnhancedPageHeader: React.FC<EnhancedPageHeaderProps> = ({
         <div className="flex items-start gap-4">
           {showBackButton && (
             <motion.button
-              onClick={goBack}
+              onClick={()=>navigate(-1)}
               className="flex items-center gap-2 p-2 hover:bg-white/10 dark:hover:bg-black/20 rounded-lg transition-colors cursor-pointer group mt-1"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

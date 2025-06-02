@@ -27,9 +27,9 @@ export const TermsOfService: React.FC = () => {
             1. Acceptance of Terms
           </h2>
           <p className="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-            By accessing and using VClock ("the Service"), you accept and agree to be bound by the terms 
+            By accessing and using Online Timer Pro ("the Service"), you accept and agree to be bound by the terms 
             and provisions of this agreement. If you do not agree to abide by the terms outlined below, 
-            please do not use this service. Your continued use of VClock constitutes acceptance of any 
+            please do not use this service. Your continued use of Online Timer Pro constitutes acceptance of any 
             changes to these terms.
           </p>
         </section>
@@ -39,7 +39,7 @@ export const TermsOfService: React.FC = () => {
             2. Service Description
           </h2>
           <p className="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-            VClock is a free web-based timer application designed to enhance productivity and fitness routines. 
+            Online Timer Pro is a free web-based timer application designed to enhance productivity and fitness routines. 
             Our service provides:
           </p>
           <div className="grid md:grid-cols-2 gap-4 mb-6">
@@ -75,7 +75,7 @@ export const TermsOfService: React.FC = () => {
             3. Acceptable Use Policy
           </h2>
           <p className="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-            You agree to use VClock only for lawful purposes and in a manner that does not violate these terms. 
+            You agree to use Online Timer Pro only for lawful purposes and in a manner that does not violate these terms. 
             Prohibited activities include:
           </p>
           <div className="bg-red-50 dark:bg-red-900/20 p-6 rounded-lg border border-red-200 dark:border-red-800 mb-4">
@@ -109,12 +109,12 @@ export const TermsOfService: React.FC = () => {
             4. Intellectual Property Rights
           </h2>
           <p className="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-            The VClock application, including its design, functionality, graphics, interface, and content, 
+            The Online Timer Pro application, including its design, functionality, graphics, interface, and content, 
             is protected by copyright and other intellectual property laws. All rights are reserved.
           </p>
           <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg border border-amber-200 dark:border-amber-800">
             <p className="text-amber-800 dark:text-amber-200 text-sm">
-              <strong>Note:</strong> You may use VClock for personal and commercial timing needs, but you may not 
+              <strong>Note:</strong> You may use Online Timer Pro for personal and commercial timing needs, but you may not 
               copy, modify, distribute, sell, or lease any part of our service or included software.
             </p>
           </div>
@@ -125,7 +125,7 @@ export const TermsOfService: React.FC = () => {
             5. Disclaimer of Warranties
           </h2>
           <p className="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-            VClock is provided "AS IS" and "AS AVAILABLE" without warranties of any kind, either express or implied. 
+            Online Timer Pro is provided "AS IS" and "AS AVAILABLE" without warranties of any kind, either express or implied. 
             We do not guarantee that the service will be:
           </p>
           <div className="grid md:grid-cols-2 gap-4">
@@ -157,7 +157,7 @@ export const TermsOfService: React.FC = () => {
             6. Limitation of Liability
           </h2>
           <p className="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-            Under no circumstances shall VClock, its developers, or affiliates be liable for any indirect, 
+            Under no circumstances shall Online Timer Pro, its developers, or affiliates be liable for any indirect, 
             incidental, special, consequential, or punitive damages, including but not limited to loss of 
             profits, data, use, goodwill, or other intangible losses resulting from your use of the service.
           </p>
@@ -169,7 +169,7 @@ export const TermsOfService: React.FC = () => {
           </h2>
           <p className="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed">
             Your privacy is important to us. Our Privacy Policy explains how we collect, use, and protect 
-            your information when you use VClock. By using our service, you agree to the collection and 
+            your information when you use Online Timer Pro. By using our service, you agree to the collection and 
             use of information in accordance with our Privacy Policy.
           </p>
         </section>
@@ -179,7 +179,7 @@ export const TermsOfService: React.FC = () => {
             8. Third-Party Services and Advertising
           </h2>
           <p className="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-            VClock displays advertisements through Google AdSense to support our free service. 
+            Online Timer Pro displays advertisements through Google AdSense to support our free service. 
             These ads are provided by third parties and we are not responsible for their content 
             or the privacy practices of advertisers.
           </p>
@@ -190,7 +190,7 @@ export const TermsOfService: React.FC = () => {
             9. Service Modifications and Termination
           </h2>
           <p className="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-            We reserve the right to modify, suspend, or discontinue VClock at any time without prior notice. 
+            We reserve the right to modify, suspend, or discontinue Online Timer Pro at any time without prior notice. 
             We may also update these Terms of Service periodically. Continued use of the service after 
             any changes constitutes acceptance of the new terms.
           </p>
@@ -202,7 +202,7 @@ export const TermsOfService: React.FC = () => {
           </h2>
           <p className="mb-4 text-gray-700 dark:text-gray-300 leading-relaxed">
             These Terms of Service shall be governed by and construed in accordance with applicable laws. 
-            Any disputes arising from these terms or your use of VClock shall be resolved through 
+            Any disputes arising from these terms or your use of Online Timer Pro shall be resolved through 
             binding arbitration or in the appropriate courts.
           </p>
         </section>
@@ -215,15 +215,15 @@ export const TermsOfService: React.FC = () => {
             If you have any questions about these Terms of Service, please contact us:
           </p>
           <div className="space-y-2 text-blue-700 dark:text-blue-300">
-            <p><strong>Email:</strong> legal@vclock.app</p>
-            <p><strong>Support:</strong> support@vclock.app</p>
-            <p><strong>Website:</strong> https://vclock.app</p>
+            <p><strong>Email:</strong> legal@onlinetimerpro.com</p>
+            <p><strong>Support:</strong> support@onlinetimerpro.com</p>
+            <p><strong>Website:</strong> https://onlinetimerpro.com</p>
           </div>
         </section>
 
         <div className="text-center text-sm text-gray-500 dark:text-gray-400 border-t border-gray-300 dark:border-gray-600 pt-6">
           <p>
-            By using VClock, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
+            By using Online Timer Pro, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
           </p>
         </div>
       </div>

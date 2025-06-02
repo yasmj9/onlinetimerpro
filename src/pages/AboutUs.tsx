@@ -40,14 +40,6 @@ export const AboutUs: React.FC = () => {
     }
   ];
 
-  const technologies = [
-    { name: 'React 18', description: 'Modern React with concurrent features' },
-    { name: 'TypeScript', description: 'Type-safe development' },
-    { name: 'Framer Motion', description: 'Smooth animations' },
-    { name: 'Tailwind CSS', description: 'Responsive styling' },
-    { name: 'PWA', description: 'Offline support & installability' },
-    { name: 'High-Precision Timing', description: 'requestAnimationFrame & performance.now()' }
-  ];
 
   return (
     <motion.div
@@ -64,7 +56,7 @@ export const AboutUs: React.FC = () => {
           className="mb-8"
         >
           <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-6">
-            VClock
+            Online Timer Pro
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             The most beautiful and functional timer application on the web, designed to enhance 
@@ -81,9 +73,9 @@ export const AboutUs: React.FC = () => {
           </h2>
           <p className="text-lg text-gray-700 dark:text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
             We believe that time management tools should be both powerful and delightful to use. 
-            VClock combines precision timing with beautiful design to create an experience that 
+            Online Timer Pro combines precision timing with beautiful design to create an experience that 
             makes every second count. Whether you're timing a workout, managing productivity, 
-            or simply keeping track of time, VClock is designed to be your perfect companion.
+            or simply keeping track of time, Online Timer Pro is designed to be your perfect companion.
           </p>
         </div>
       </section>
@@ -118,7 +110,7 @@ export const AboutUs: React.FC = () => {
       <section className="mb-16">
         <div className="bg-white/10 dark:bg-black/20 backdrop-blur-md rounded-2xl p-8 md:p-12 border border-white/20 dark:border-white/10">
           <h2 className="text-3xl font-bold text-center mb-8 text-gray-800 dark:text-gray-200">
-            Why Choose VClock?
+            Why Choose Online Timer Pro?
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
@@ -171,31 +163,6 @@ export const AboutUs: React.FC = () => {
         </div>
       </section>
 
-      {/* Technology Section */}
-      <section className="mb-16">
-        <h2 className="text-3xl font-bold text-center mb-8 text-gray-800 dark:text-gray-200">
-          Built with Modern Technology
-        </h2>
-        <p className="text-center text-gray-600 dark:text-gray-400 mb-8 max-w-3xl mx-auto">
-          VClock is built with cutting-edge web technologies to ensure the best possible experience, 
-          performance, and reliability.
-        </p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {technologies.map((tech, index) => (
-            <motion.div
-              key={tech.name}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: index * 0.1 }}
-              className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-lg p-4 border border-blue-200 dark:border-blue-800"
-            >
-              <h4 className="font-semibold text-blue-800 dark:text-blue-200">{tech.name}</h4>
-              <p className="text-sm text-blue-600 dark:text-blue-300">{tech.description}</p>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
       {/* Free Forever Section */}
       <section className="mb-16">
         <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-2xl p-8 md:p-12 text-center border border-green-200 dark:border-green-800">
@@ -203,9 +170,9 @@ export const AboutUs: React.FC = () => {
             Free Forever 💚
           </h2>
           <p className="text-lg text-green-700 dark:text-green-300 max-w-3xl mx-auto mb-6">
-            VClock is completely free to use and always will be. We're supported by non-intrusive 
+            Online Timer Pro is completely free to use and always will be. We're supported by non-intrusive 
             advertisements that help us maintain and improve the service. We're committed to keeping 
-            VClock accessible to everyone, everywhere.
+            Online Timer Pro accessible to everyone, everywhere.
           </p>
           <div className="inline-flex items-center gap-2 bg-green-100 dark:bg-green-900/30 px-4 py-2 rounded-full">
             <span className="text-2xl">🎉</span>
@@ -221,7 +188,7 @@ export const AboutUs: React.FC = () => {
         </h2>
         <div className="bg-white/10 dark:bg-black/20 backdrop-blur-md rounded-2xl p-8 border border-white/20 dark:border-white/10">
           <p className="text-center text-gray-600 dark:text-gray-400 mb-8">
-            We're constantly working to improve VClock. Here's what we're planning:
+            We're constantly working to improve Online Timer Pro. Here's what we're planning:
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
@@ -270,17 +237,17 @@ export const AboutUs: React.FC = () => {
             <div className="bg-white/20 dark:bg-black/20 rounded-lg p-4">
               <div className="text-2xl mb-2">📧</div>
               <div className="font-semibold text-blue-800 dark:text-blue-200">Email</div>
-              <div className="text-sm text-blue-600 dark:text-blue-300">hello@vclock.app</div>
+              <div className="text-sm text-blue-600 dark:text-blue-300">hello@onlinetimerpro.com</div>
             </div>
             <div className="bg-white/20 dark:bg-black/20 rounded-lg p-4">
               <div className="text-2xl mb-2">🛠️</div>
               <div className="font-semibold text-blue-800 dark:text-blue-200">Support</div>
-              <div className="text-sm text-blue-600 dark:text-blue-300">support@vclock.app</div>
+              <div className="text-sm text-blue-600 dark:text-blue-300">support@onlinetimerpro.com</div>
             </div>
             <div className="bg-white/20 dark:bg-black/20 rounded-lg p-4">
               <div className="text-2xl mb-2">🌐</div>
               <div className="font-semibold text-blue-800 dark:text-blue-200">Website</div>
-              <div className="text-sm text-blue-600 dark:text-blue-300">vclock.app</div>
+              <div className="text-sm text-blue-600 dark:text-blue-300">onlinetimerpro.com</div>
             </div>
           </div>
         </div>

@@ -1,61 +1,62 @@
 // components/SEOHead.tsx
 import { useEffect } from 'react';
-import { PageType } from '../hooks/useRouter';
+
+type PageType = 'home' | 'privacy' | 'terms' | 'about' | 'contact';
 
 // SEO data for each page
 const seoData = {
   home: {
-    title: 'VClock - Beautiful Timer App for Productivity & Workouts',
+    title: 'Online Timer Pro - Beautiful Timer App for Productivity & Workouts',
     description: 'Free online timer with countdown, training intervals, and stopwatch. Perfect for HIIT workouts, Pomodoro technique, and time management. No registration required.',
     keywords: 'timer, countdown timer, workout timer, HIIT timer, productivity timer, stopwatch, training timer, free timer app, online timer',
     path: '/',
     type: 'website',
-    image: '/images/vclock-og-home.png'
+    image: '/images/onlinetimerpro-og-home.png'
   },
   about: {
-    title: 'About VClock - Our Mission & Features',
-    description: 'Learn about VClock\'s mission to provide the best free timer app. Discover our features: countdown timers, training intervals, dark mode, and PWA support.',
-    keywords: 'about vclock, timer app features, free timer, workout timer features, productivity tools',
-    path: '/about',
+    title: 'About Online Timer Pro - Our Mission & Features',
+    description: 'Learn about Online Timer Pro\'s mission to provide the best free timer app. Discover our features: countdown timers, training intervals, dark mode, and PWA support.',
+    keywords: 'about onlinetimerpro, timer app features, free timer, workout timer features, productivity tools',
+    path: '/pages/about',
     type: 'website',
-    image: '/images/vclock-og-about.png'
+    image: '/images/onlinetimerpro-og-about.png'
   },
   privacy: {
-    title: 'Privacy Policy - How VClock Protects Your Data',
-    description: 'VClock privacy policy: Learn how we protect your data, use local storage, and integrate with Google AdSense while respecting your privacy.',
-    keywords: 'privacy policy, data protection, vclock privacy, timer app privacy, GDPR compliance',
-    path: '/privacy',
+    title: 'Privacy Policy - How Online Timer Pro Protects Your Data',
+    description: 'Online Timer Pro privacy policy: Learn how we protect your data, use local storage, and integrate with Google AdSense while respecting your privacy.',
+    keywords: 'privacy policy, data protection, onlinetimerpro privacy, timer app privacy, GDPR compliance',
+    path: '/pages/privacy',
     type: 'article',
-    image: '/images/vclock-og-privacy.png'
+    image: '/images/onlinetimerpro-og-privacy.png'
   },
   terms: {
-    title: 'Terms of Service - VClock Usage Guidelines',
-    description: 'VClock terms of service: acceptable use policy, intellectual property, disclaimers, and legal guidelines for using our free timer application.',
-    keywords: 'terms of service, user agreement, vclock terms, timer app terms, usage policy',
-    path: '/terms',
+    title: 'Terms of Service - Online Timer Pro Usage Guidelines',
+    description: 'Online Timer Pro terms of service: acceptable use policy, intellectual property, disclaimers, and legal guidelines for using our free timer application.',
+    keywords: 'terms of service, user agreement, onlinetimerpro terms, timer app terms, usage policy',
+    path: '/pages/terms',
     type: 'article',
-    image: '/images/vclock-og-terms.png'
+    image: '/images/onlinetimerpro-og-terms.png'
   },
   contact: {
-    title: 'Contact VClock - Get Support & Send Feedback',
-    description: 'Contact the VClock team for support, feature requests, bug reports, or general feedback. We love hearing from our users!',
-    keywords: 'contact vclock, timer app support, customer service, feedback, help',
-    path: '/contact',
+    title: 'Contact Online Timer Pro - Get Support & Send Feedback',
+    description: 'Contact the Online Timer Pro team for support, feature requests, bug reports, or general feedback. We love hearing from our users!',
+    keywords: 'contact onlinetimerpro, timer app support, customer service, feedback, help',
+    path: '/pages/contact',
     type: 'website',
-    image: '/images/vclock-og-contact.png'
+    image: '/images/onlinetimerpro-og-contact.png'
   }
 };
 
 // Website configuration
 const siteConfig = {
-  siteName: 'VClock',
-  siteUrl: 'https://vclock.app',
-  twitterHandle: '@vclock_app',
+  siteName: 'Online Timer Pro',
+  siteUrl: 'https://onlinetimerpro.com',
+  twitterHandle: '@onlinetimerpro_app',
   language: 'en',
   country: 'US',
-  author: 'VClock Team',
-  publisher: 'VClock',
-  copyright: `© ${new Date().getFullYear()} VClock. All rights reserved.`
+  author: 'Online Timer Pro Team',
+  publisher: 'Online Timer Pro',
+  copyright: `© ${new Date().getFullYear()} Online Timer Pro. All rights reserved.`
 };
 
 interface SEOHeadProps {
@@ -183,7 +184,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
         "@context": "https://schema.org",
         "@type": "WebApplication",
         "name": siteConfig.siteName,
-        "alternateName": "VClock Timer App",
+        "alternateName": "Online Timer Pro Timer App",
         "url": siteConfig.siteUrl,
         "description": seoData.home.description,
         "applicationCategory": "UtilityApplication",
@@ -220,7 +221,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
           "Keyboard Shortcuts",
           "Preset Management"
         ],
-        "screenshot": `${siteConfig.siteUrl}/images/vclock-screenshot.png`,
+        "screenshot": `${siteConfig.siteUrl}/images/onlinetimerpro-screenshot.png`,
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.8",
@@ -236,7 +237,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
           ...baseStructuredData,
           "mainEntity": {
             "@type": "SoftwareApplication",
-            "name": "VClock Timer",
+            "name": "Online Timer Pro Timer",
             "applicationCategory": "Productivity",
             "operatingSystem": "Web Browser"
           }
@@ -247,7 +248,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
         return {
           "@context": "https://schema.org",
           "@type": "AboutPage",
-          "name": "About VClock",
+          "name": "About Online Timer Pro",
           "description": pageData.description,
           "url": fullUrl,
           "mainEntity": baseStructuredData
@@ -258,7 +259,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
         return {
           "@context": "https://schema.org",
           "@type": "ContactPage",
-          "name": "Contact VClock",
+          "name": "Contact Online Timer Pro",
           "description": pageData.description,
           "url": fullUrl,
           "mainEntity": {
@@ -269,13 +270,13 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
               {
                 "@type": "ContactPoint",
                 "contactType": "customer service",
-                "email": "support@vclock.app",
+                "email": "support@onlinetimerpro.com",
                 "availableLanguage": "English"
               },
               {
                 "@type": "ContactPoint",
                 "contactType": "business",
-                "email": "business@vclock.app",
+                "email": "business@onlinetimerpro.com",
                 "availableLanguage": "English"
               }
             ]
@@ -374,7 +375,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": siteConfig.siteName,
-        "alternateName": "VClock Timer App",
+        "alternateName": "Online Timer Pro Timer App",
         "url": siteConfig.siteUrl,
         "description": seoData.home.description,
         "inLanguage": "en-US",

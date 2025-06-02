@@ -17,7 +17,7 @@ export const PrivacyPolicy: React.FC = () => {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">1. Information We Collect</h2>
           <p className="mb-4">
-            VClock is committed to protecting your privacy. We collect minimal information to provide our timer services:
+            Online Timer Pro is committed to protecting your privacy. We collect minimal information to provide our timer services:
           </p>
           <ul className="list-disc pl-6 mb-4">
             <li>Timer preferences and settings (stored locally on your device)</li>
@@ -115,8 +115,8 @@ export const PrivacyPolicy: React.FC = () => {
             If you have any questions about this Privacy Policy, please contact us at:
           </p>
           <p className="mb-4">
-            Email: privacy@vclock.app<br />
-            Website: https://vclock.app
+            Email: privacy@onlinetimerpro.com<br />
+            Website: https://onlinetimerpro.com
           </p>
         </section>
       </div>

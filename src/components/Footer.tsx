@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
-import { useRouter, PageType } from '../hooks/useRouter';
+import { PageType } from '../hooks/useRouter';
+import { useNavigate } from 'react-router';
 
 export const Footer: React.FC = () => {
-  const { navigate } = useRouter();
+  let navigate = useNavigate();
 
   const footerLinks = [
     { page: 'about' as PageType, label: 'About Us' },
@@ -59,7 +60,7 @@ export const Footer: React.FC = () => {
               {footerLinks.map(link => (
                 <li key={link.page}>
                   <button
-                    onClick={() => navigate(link.page)}
+                    onClick={() => navigate(`/pages/${link.page}`)}
                     className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-500 transition-colors cursor-pointer"
                   >
                     {link.label}

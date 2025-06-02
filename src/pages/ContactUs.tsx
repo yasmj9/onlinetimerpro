@@ -86,41 +86,41 @@ export const ContactUs: React.FC = () => {
       icon: '📧',
       title: 'Email Us',
       description: 'Send us an email anytime',
-      contact: 'hello@vclock.app',
+      contact: 'hello@onlinetimerpro.com',
       color: 'blue'
     },
     {
       icon: '🛠️',
       title: 'Technical Support',
       description: 'Get help with technical issues',
-      contact: 'support@vclock.app',
+      contact: 'support@onlinetimerpro.com',
       color: 'green'
     },
     {
       icon: '💼',
       title: 'Business Inquiries',
       description: 'Partnership and business opportunities',
-      contact: 'business@vclock.app',
+      contact: 'business@onlinetimerpro.com',
       color: 'purple'
     }
   ];
 
   const faqItems = [
     {
-      question: 'Is VClock really free to use?',
-      answer: 'Yes! VClock is completely free and always will be. We\'re supported by non-intrusive advertisements.'
+      question: 'Is Online Timer Pro really free to use?',
+      answer: 'Yes! Online Timer Pro is completely free and always will be. We\'re supported by non-intrusive advertisements.'
     },
     {
-      question: 'Can I use VClock offline?',
-      answer: 'Yes, VClock is a Progressive Web App (PWA) that works offline once you\'ve visited it online.'
+      question: 'Can I use Online Timer Pro offline?',
+      answer: 'Yes, Online Timer Pro is a Progressive Web App (PWA) that works offline once you\'ve visited it online.'
     },
     {
       question: 'Is my data stored on your servers?',
       answer: 'No, all your timer presets and settings are stored locally in your browser. We don\'t collect or store your personal data.'
     },
     {
-      question: 'Can I install VClock on my device?',
-      answer: 'Yes! You can install VClock as a PWA on your phone, tablet, or computer for a native app-like experience.'
+      question: 'Can I install Online Timer Pro on my device?',
+      answer: 'Yes! You can install Online Timer Pro as a PWA on your phone, tablet, or computer for a native app-like experience.'
     }
   ];
 
@@ -169,7 +169,7 @@ export const ContactUs: React.FC = () => {
         </h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
           We'd love to hear from you! Whether you have questions, feedback, 
-          or suggestions for improving VClock, don't hesitate to reach out.
+          or suggestions for improving Online Timer Pro, don't hesitate to reach out.
         </p>
       </div>
 

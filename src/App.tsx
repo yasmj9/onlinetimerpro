@@ -18,7 +18,7 @@ function App() {
 
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/pages" element={<PageLayout title='test'/>} >
+            <Route path="/pages" element={<PageLayout title=''/>} >
               <Route path="privacy" element={<PrivacyPolicy />} />
               <Route path="terms" element={<TermsOfService />} />
               <Route path="about" element={<AboutUs />} />

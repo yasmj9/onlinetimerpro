@@ -13,7 +13,7 @@ export const MeditationTimer: React.FC = () => {
     config,
     currentPhase,
     timeLeft,
-    totalDuration,
+    //totalDuration,
     isRunning,
     isComplete,
     progress,

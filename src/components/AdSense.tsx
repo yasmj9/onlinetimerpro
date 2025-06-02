@@ -37,16 +37,12 @@ export const AdSense: React.FC<AdSenseProps> = ({
 
   return (
     <div className={`adsense-container ${className}`}>
-      <ins
-        className="adsbygoogle"
-        style={adStyle}
-        data-ad-client="ca-pub-XXXXXXXXXXXXXXXXX" // Replace with your AdSense Publisher ID
-        data-ad-slot={adSlot}
-        data-ad-format={adFormat}
-        data-ad-layout={adLayout}
-        data-ad-layout-key={adLayoutKey}
-        data-full-width-responsive={responsive.toString()}
-      />
+      <ins className="adsbygoogle"
+     style={adStyle}
+     data-ad-client="ca-pub-5343898025629047"
+     data-ad-slot={adSlot}
+     data-ad-format={adFormat}
+     data-full-width-responsive="true"></ins>
     </div>
   );
 };

@@ -11,26 +11,27 @@ export const AdBanner: React.FC<AdBannerProps> = ({ position, className = '' }) 
     switch (position) {
       case 'top':
         return {
-          adSlot: '1234567890', // Replace with your ad slot ID
+          adSlot: '5888973072', // Replace with your ad slot ID
           adFormat: 'banner' as const,
-          style: { width: '100%', height: '90px' }
+          style: {}
         };
       case 'bottom':
         return {
-          adSlot: '1234567891', // Replace with your ad slot ID
-          adFormat: 'banner' as const,
+          adSlot: '5888973072', // Replace with your ad slot ID
+          adFormat: 'auto' as const,
           style: { width: '100%', height: '90px' }
         };
       case 'sidebar':
         return {
-          adSlot: '1234567892', // Replace with your ad slot ID
-          adFormat: 'rectangle' as const,
-          style: { width: '300px', height: '250px' }
+          adSlot: '7568660910', // Replace with your ad slot ID
+          adFormat: 'auto' as const,
+          style: {}
         };
       default:
         return {
-          adSlot: '1234567890',
-          adFormat: 'auto' as const
+          adSlot: '5888973072',
+          adFormat: 'auto' as const,
+          style: {}
         };
     }
   };

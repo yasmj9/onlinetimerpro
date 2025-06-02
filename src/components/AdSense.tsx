@@ -13,11 +13,8 @@ interface AdSenseProps {
 export const AdSense: React.FC<AdSenseProps> = ({
   adSlot,
   adFormat = 'auto',
-  adLayout,
-  adLayoutKey,
   style = {},
   className = '',
-  responsive = true
 }) => {
   useEffect(() => {
     try {

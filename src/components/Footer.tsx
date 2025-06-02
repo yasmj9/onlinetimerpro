@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router';
 
+type PageType = 'home' | 'privacy' | 'terms' | 'about' | 'contact';
+
 export const Footer: React.FC = () => {
   let navigate = useNavigate();
 

@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { PageType } from '../hooks/useRouter';
 import { useNavigate } from 'react-router';
 
 export const Footer: React.FC = () => {

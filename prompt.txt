@@ -1,0 +1,48 @@
+-- article
+
+Act as a senior content strategist and expert writer for "Online Timer Pro," a website providing free, high-quality timers for fitness, meditation, and productivity. Your goal is to produce a definitive, cornerstone article that will be a go-to resource for users.
+Your task is to write a comprehensive, in-depth blog post of at least 800 words on the following topic: [YOUR ARTICLE TOPIC]
+The final output must be a single, complete Markdown (.md) file, ready for publishing. Do not include any commentary outside of the Markdown code block.
+Adhere to these strict requirements:
+1. File Format & Frontmatter:
+The entire output must be a single block of code formatted as a Markdown file.
+It must start with a YAML frontmatter section (---) containing:
+* title: A compelling, SEO-friendly title that promises a comprehensive guide.
+* date: Use today's date in YYYY-MM-DD format.
+* excerpt: A 1-2 sentence, high-impact summary. It must capture the core value of the article and entice clicks from search results.
+* coverImage: A placeholder path, formatted as /images/blog/[topic-keyword-in-kebab-case].jpg.
+2. Content Depth and Structure (Minimum 800 words):
+Introduction: Start with a strong, relatable hook. Briefly touch upon the problem the reader is facing and promise a detailed, actionable solution within the article.
+"What and Why" Section: Dedicate a significant section (##) to explaining the core concepts. Go beyond a simple definition. Discuss the history, the science, or the psychology behind the topic (e.g., the physiological effects of HIIT, the cognitive benefits of the Pomodoro Technique).
+Multiple In-Depth Sections: Use at least 3-4 main ## headings to break down the topic into logical parts.
+* For each section: Use ### sub-headings to explore specific facets. For example, a section on "HIIT Workouts" could have sub-headings for "For Beginners," "For Fat Loss," and "Advanced Challenge."
+* Use Lists: Employ bulleted (*) and numbered (1.) lists extensively to present information like benefits, common mistakes, step-by-step instructions, and tips. This is crucial for scannability in a long article.
+Practical "How-To" Guide: Include a detailed, step-by-step guide on how to apply the information using the Online Timer Pro tool. Be specific with settings and instructions. This section must be highly practical and user-focused.
+"Common Mistakes to Avoid" or "Pro-Tips" Section: Add a value-driven section that demonstrates expertise. This shows you understand the user's potential challenges and can guide them past hurdles.
+FAQ Section (Frequently Asked Questions): Create a section at the end with a ## FAQ heading. Include 3-5 common questions related to the topic and provide concise, authoritative answers. This is excellent for SEO and user experience.
+Conclusion: Provide a strong summary of the article's key points. End with an empowering call to action, encouraging the user to not just read, but to act by using the timer and starting their journey.
+3. Writing Style and SEO:
+Authoritative Tone: Write with confidence and clarity.
+Internal Linking: Naturally mention other site tools or potential future articles (e.g., "...which pairs well with our Meditation Timer for recovery...").
+Keyword Integration: The primary topic keyword should appear naturally in the title, introduction, a few headings, and throughout the body content without sounding repetitive.
+Readability: Maintain short paragraphs (2-4 sentences) and simple language despite the article's length.
+
+
+-- image
+
+Create a high-quality, professional animated banner image (GIF) for a blog post. The banner should be visually appealing, loop seamlessly, and not be distracting.
+Core Subject: A person productively working or exercising.
+Article Title for Context: [How a Dedicated Timer Maximizes Your Workout Efficiency]
+Technical Specifications:
+Format: Animated GIF.
+Aspect Ratio: 16:9 (widescreen, suitable for a blog banner).
+Style: Modern, clean, and slightly stylized illustration. Use a calming color palette with blues, greens, or warm oranges. Avoid photorealism.
+Animation: The animation must be subtle and looping. Focus on one or two small, repeating movements. Do not animate the entire scene.
+Animation Details (Choose ONE of these concepts):
+For a Productivity/Focus Article: A person at a clean desk with a laptop. Animation: Steam gently rises in a continuous loop from a coffee mug next to them, OR a small desk plant's leaves sway very slightly. The person remains focused and still.
+For a Fitness/HIIT Article: A stylized character in athletic wear holding a plank position. Animation: Small beads of sweat slowly drip down their forehead in a repeating loop. The character's body remains stable and strong.
+For a Meditation Article: A person sitting in a calm, cross-legged meditation pose. Animation: The background shows a soft, glowing light that slowly pulses, or a single candle flame flickers gently and continuously.
+Composition:
+The main subject should be slightly off-center to leave space for potential text overlays.
+The background should be simple and uncluttered.
+Ensure the overall mood is calm, focused, or energetic, depending on the article's theme.

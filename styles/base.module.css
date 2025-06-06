@@ -1,0 +1,232 @@
+/* styles/base.module.css - Layout, Header, Footer, Navigation */
+
+/* ===================================
+   LAYOUT COMPONENTS
+   =================================== */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(74, 144, 226, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 60%, rgba(53, 122, 189, 0.2) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===================================
+   HEADER & NAVIGATION
+   =================================== */
+
+.header {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--glass-border);
+  padding: var(--spacing-md) 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all var(--transition-normal);
+}
+
+.nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--spacing-xl);
+}
+
+.logo {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-light);
+  text-decoration: none;
+  background: linear-gradient(135deg, #ffffff 0%, #e3e3e3 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all var(--transition-fast);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.navLinks {
+  display: flex;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.navLinks a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-sm);
+  transition: all var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+}
+
+.navLinks a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--glass-bg);
+  transition: left var(--transition-normal);
+  z-index: -1;
+}
+
+.navLinks a:hover::before {
+  left: 0;
+}
+
+.navLinks a:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.activeNavLink {
+  background: var(--glass-bg) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+/* ===================================
+   MAIN CONTENT
+   =================================== */
+
+.main {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+  width: 100%;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+
+.footer {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  color: var(--text-light);
+  text-align: center;
+  padding: var(--spacing-2xl);
+  margin-top: auto;
+  border-top: 1px solid var(--glass-border);
+}
+
+.footer p {
+  margin-bottom: var(--spacing-md);
+  opacity: 0.9;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-xl);
+  flex-wrap: wrap;
+}
+
+.footerLinks a {
+  color: var(--text-light);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all var(--transition-fast);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-sm);
+}
+
+.footerLinks a:hover {
+  opacity: 1;
+  background: var(--glass-bg);
+  transform: translateY(-2px);
+}
+
+.footerInfo {
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--glass-border);
+}
+
+.footerInfo p {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin: 0;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+
+@media (max-width: 1024px) {
+  .nav {
+    padding: 0 var(--spacing-lg);
+  }
+  
+  .main {
+    padding: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+  }
+  
+  .navLinks {
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .main {
+    padding: var(--spacing-md);
+  }
+  
+  .footerLinks {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: var(--spacing-sm);
+  }
+  
+  .main {
+    padding: var(--spacing-sm);
+  }
+}
